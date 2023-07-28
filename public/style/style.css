@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+}
+.chatPage header{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 40px;
+    padding-left: 2rem;
+}
+.chatPage{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+}
+.chatPage main{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+}
+.chatPage .chatList{
+    width: 100%;
+    flex:1;
+    max-height:calc(100vh - 100px);
+    background-color: green;
+    overflow-y: scroll;
+}
+
+.chatPage .chatInput{
+    height:20px;
+    background-color: red;
+    padding: 30px 40px;
+    display: flex;
+    align-items: center;
+}
+.chatInput input{
+    flex:1;
+    padding: 5px 10px;
+}
+
+.loginPage{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.loginPage select, .loginPage input{
+    width: 20vh;
+    max-width: 150px; 
+    padding: 5px 10px;
+    
+}
